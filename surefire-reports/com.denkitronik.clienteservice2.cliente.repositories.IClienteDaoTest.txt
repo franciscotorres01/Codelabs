@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.denkitronik.clienteservice2.cliente.repositories.IClienteDaoTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.003 s -- in com.denkitronik.clienteservice2.cliente.repositories.IClienteDaoTest

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GlobalExceptionHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cliente-service2</a> &gt; <a href="index.source.html" class="el_package">com.denkitronik.clienteservice2.cliente.advice</a> &gt; <span class="el_source">GlobalExceptionHandler.java</span></div><h1>GlobalExceptionHandler.java</h1><pre class="source lang-java linenums">package com.denkitronik.clienteservice2.cliente.advice;
+
+import com.denkitronik.clienteservice2.cliente.exceptions.ApiErrorResponse;
+import com.denkitronik.clienteservice2.cliente.exceptions.ClienteExistsException;
+import com.denkitronik.clienteservice2.cliente.exceptions.ClienteNotFoundException;
+import com.denkitronik.clienteservice2.cliente.exceptions.ClienteServiceException;
+import jakarta.servlet.http.HttpServletRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.util.stream.Collectors;
+
+@RestControllerAdvice
+<span class="fc" id="L20">public class GlobalExceptionHandler {</span>
+
+    // 1. Inicializar el Logger para registrar los errores en consola
+<span class="fc" id="L23">    private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);</span>
+
+    // 2. Manejar error 404 (Cliente no encontrado)
+    @ExceptionHandler(ClienteNotFoundException.class)
+    public ResponseEntity&lt;ApiErrorResponse&gt; handleNotFound(ClienteNotFoundException ex, HttpServletRequest request) {
+<span class="fc" id="L28">        logger.warn(&quot;Cliente no encontrado: {}&quot;, ex.getMessage());</span>
+<span class="fc" id="L29">        ApiErrorResponse error = new ApiErrorResponse(</span>
+<span class="fc" id="L30">                HttpStatus.NOT_FOUND.value(),</span>
+                &quot;Not Found&quot;,
+<span class="fc" id="L32">                ex.getMessage(),</span>
+<span class="fc" id="L33">                request.getRequestURI()</span>
+        );
+<span class="fc" id="L35">        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);</span>
+    }
+
+    // 3. Manejar error 409 (Email duplicado)
+    @ExceptionHandler(ClienteExistsException.class)
+    public ResponseEntity&lt;ApiErrorResponse&gt; handleExists(ClienteExistsException ex, HttpServletRequest request) {
+<span class="fc" id="L41">        logger.warn(&quot;Conflicto de email: {}&quot;, ex.getMessage());</span>
+<span class="fc" id="L42">        ApiErrorResponse error = new ApiErrorResponse(</span>
+<span class="fc" id="L43">                HttpStatus.CONFLICT.value(),</span>
+                &quot;Conflict&quot;,
+<span class="fc" id="L45">                ex.getMessage(),</span>
+<span class="fc" id="L46">                request.getRequestURI()</span>
+        );
+<span class="fc" id="L48">        return ResponseEntity.status(HttpStatus.CONFLICT).body(error);</span>
+    }
+
+    // 4. Manejar error 400 (Validaciones @Valid)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity&lt;ApiErrorResponse&gt; handleValidation(MethodArgumentNotValidException ex, HttpServletRequest request) {
+<span class="fc" id="L54">        String mensajes = ex.getBindingResult().getFieldErrors()</span>
+<span class="fc" id="L55">                .stream()</span>
+<span class="fc" id="L56">                .map(FieldError::getDefaultMessage)</span>
+<span class="fc" id="L57">                .collect(Collectors.joining(&quot;, &quot;));</span>
+
+<span class="fc" id="L59">        logger.warn(&quot;Error de validación: {}&quot;, mensajes);</span>
+<span class="fc" id="L60">        ApiErrorResponse error = new ApiErrorResponse(</span>
+<span class="fc" id="L61">                HttpStatus.BAD_REQUEST.value(),</span>
+                &quot;Bad Request&quot;,
+                mensajes,
+<span class="fc" id="L64">                request.getRequestURI()</span>
+        );
+<span class="fc" id="L66">        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);</span>
+    }
+
+    // 5. Manejar error 500 (Errores internos personalizados)
+    @ExceptionHandler(ClienteServiceException.class)
+    public ResponseEntity&lt;ApiErrorResponse&gt; handleService(ClienteServiceException ex, HttpServletRequest request) {
+<span class="nc" id="L72">        logger.error(&quot;Error interno del servicio: {}&quot;, ex.getMessage(), ex);</span>
+<span class="nc" id="L73">        ApiErrorResponse error = new ApiErrorResponse(</span>
+<span class="nc" id="L74">                HttpStatus.INTERNAL_SERVER_ERROR.value(),</span>
+                &quot;Internal Server Error&quot;,
+<span class="nc" id="L76">                ex.getMessage(),</span>
+<span class="nc" id="L77">                request.getRequestURI()</span>
+        );
+<span class="nc" id="L79">        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);</span>
+    }
+
+    // 6. Red de seguridad: Manejar CUALQUIER otra excepción no controlada (Error 500 genérico)
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity&lt;ApiErrorResponse&gt; handleGenericException(Exception ex, HttpServletRequest request) {
+<span class="nc" id="L85">        logger.error(&quot;Error inesperado en el servidor: {}&quot;, ex.getMessage(), ex);</span>
+<span class="nc" id="L86">        ApiErrorResponse error = new ApiErrorResponse(</span>
+<span class="nc" id="L87">                HttpStatus.INTERNAL_SERVER_ERROR.value(),</span>
+                &quot;Internal Server Error&quot;,
+                &quot;Ocurrió un error inesperado en el servidor&quot;,
+<span class="nc" id="L90">                request.getRequestURI()</span>
+        );
+<span class="nc" id="L92">        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

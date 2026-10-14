@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd0dd793-364c-4bc1-9634-fbdafaefc882" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="87" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.8601791506605245" />
+      <entry key="MS500" value="4.352051833762335" />
+      <entry key="S2" value="10.25943646863212" />
+      <entry key="S5" value="14.02596152671921" />
+      <entry key="S10" value="16.069328335148626" />
+      <entry key="S30" value="18.003655938313088" />
+      <entry key="S60" value="19.20883942361906" />
+      <entry key="M2" value="20.844106874537168" />
+      <entry key="M5" value="22.876475641150467" />
+      <entry key="M10" value="24.210491568681714" />
+      <entry key="M15" value="25.121313349646087" />
+      <entry key="M30" value="27.119774012731497" />
+      <entry key="H1" value="29.380762901074778" />
+      <entry key="H2" value="31.786586244004553" />
+      <entry key="H4" value="38.24095807751522" />
+      <entry key="D1" value="75.42789895681756" />
+      <entry key="W1" value="92.54483551458371" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.3618381237664453E-34" />
+      <entry key="MS500" value="1.6858739404357606E-7" />
+      <entry key="S2" value="0.020263118041422005" />
+      <entry key="S5" value="0.21022410381342857" />
+      <entry key="S10" value="0.4585020216023357" />
+      <entry key="S30" value="0.7711054127039704" />
+      <entry key="S60" value="0.8781260803287417" />
+      <entry key="M2" value="0.937097999382858" />
+      <entry key="M5" value="0.9979078887513417" />
+      <entry key="M10" value="1.3416457893606566" />
+      <entry key="M15" value="1.9196727067010841" />
+      <entry key="M30" value="3.574438849655785" />
+      <entry key="H1" value="5.455883914671006" />
+      <entry key="H2" value="6.938437802156389" />
+      <entry key="H4" value="7.882531232516747" />
+      <entry key="D1" value="8.800232707539692" />
+      <entry key="W1" value="8.971109160973803" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.446535317194613" />
+      <entry key="MS500" value="4.151678563304854" />
+      <entry key="S2" value="9.88731631688866" />
+      <entry key="S5" value="13.74622982349363" />
+      <entry key="S10" value="16.13884895278582" />
+      <entry key="S30" value="18.594021891824692" />
+      <entry key="S60" value="19.98842583870535" />
+      <entry key="M2" value="21.729689960261258" />
+      <entry key="M5" value="23.85303997288762" />
+      <entry key="M10" value="25.540226745331097" />
+      <entry key="M15" value="27.031664233820955" />
+      <entry key="M30" value="30.6875080353137" />
+      <entry key="H1" value="34.83209825194547" />
+      <entry key="H2" value="38.722264379848546" />
+      <entry key="H4" value="46.12192595993237" />
+      <entry key="D1" value="84.22781566844768" />
+      <entry key="W1" value="101.51589693120884" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JjXneL2tTQ7tilvi1Vae9RUnJd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.request | #13.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 10. GET /clientes/999 (404 Not Found).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 10. Verificar que la API sigue funcionando (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 11. PUT /clientes/13 con datos válidos (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 12. PUT /clientes/13 con nombre vacío (400 Bad Request).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 13. DELETE /clientes/13 (204 No Content).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 14. GET /clientes/13 (404 Not Found).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 2. Listar clientes con paginación (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 2. Página 0, tamaño 5 (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 2.1 Probar paginación - Página 0, tamaño 5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 2.2 Probar paginación - Página 1, tamaño 5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 3. Buscar cliente que NO existe (404 Not Found - JSON estructurado).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 3. Página 1, tamaño 5 (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 4. Crear un cliente nuevo (201 Created).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 4. Página 2, tamaño 5 (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 5. Intentar crear el mismo cliente (409 Conflict - JSON estructurado).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 5. Página 0, tamaño 10 (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 6. Actualizar un cliente existente (200 OK).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 6. Página con un tamaño no válido (parámetro inválido, 400 Bad Request).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 7. Actualizar un cliente que NO existe (404 Not Found - JSON estructurado).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 7. POST /clientes con nombre vacío y email inválido (400 Bad Request).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 8. Eliminar un cliente existente (204 No Content).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 8. POST /clientes con datos válidos (201 Created).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 9. GET /clientes/13 (200 OK) - Asumiendo que el ID es 13.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | 9. Verificar que el cliente eliminado ya NO existe (404 Not Found).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#7.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#8.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================#9.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | ==========================================.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Actualizar el primer cliente (el id 1 va en la URL, no en el body).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Actualizar el primer cliente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Buscar por ID.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Buscar un cliente que no existe (debe dar 404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Cliente no encontrado.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Crear otro cliente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Crear un cliente nuevo (201 Created).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Crear un cliente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | DELETE de cliente inexistente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Eliminar el primer cliente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Email duplicado.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Listar todas las regiones.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Listar todos (ahora debe tener 2 clientes).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Listar todos los clientes (lista vacía al inicio).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | POST con datos válidos y createAt.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Probar Hola Mundo.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Prueba 10.1: DELETE de cliente inexistente.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Prueba 2: Error 409 (Email duplicado).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Prueba de validación (datos inválidos).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Validacion.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Verificar que ya no existe (debe dar 404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.request | Verificar que ya no existe.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ClienteService2Application.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.denkitronik.clienteservice2.cliente.repositories" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.denkitronik.clienteservice2.cliente.controllers" />
+      <recent name="com.denkitronik.clienteservice2.cliente.repositories" />
+      <recent name="com.denkitronik.clienteservice2" />
+      <recent name="com.denkitronik.clienteservice2.cliente.services" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="request | #13" value="STOPPED" />
+              <entry key="request | 3. Buscar cliente que NO existe (404 Not Found - JSON estructurado)" value="STOPPED" />
+              <entry key="request | 7. Actualizar un cliente que NO existe (404 Not Found - JSON estructurado)" value="STOPPED" />
+              <entry key="request | DELETE de cliente inexistente" value="STOPPED" />
+              <entry key="request | POST con datos válidos y createAt" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ClienteService2Application">
+    <configuration name="request | 3. Buscar cliente que NO existe (404 Not Found - JSON estructurado)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/request.http" executionIdentifier="3. Buscar cliente que NO existe (404 Not Found - JSON estructurado)" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | 7. Actualizar un cliente que NO existe (404 Not Found - JSON estructurado)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/request.http" executionIdentifier="7. Actualizar un cliente que NO existe (404 Not Found - JSON estructurado)" index="7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | DELETE de cliente inexistente" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/request.http" executionIdentifier="DELETE de cliente inexistente" index="11" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | POST con datos válidos y createAt" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/request.http" executionIdentifier="POST con datos válidos y createAt" index="12" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | #13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/request.http" executionIdentifier="#13" index="13" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ClienteService2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="cliente-service2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.denkitronik.clienteservice2.ClienteService2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.request | 7. Actualizar un cliente que NO existe (404 Not Found - JSON estructurado)" />
+        <item itemvalue="HTTP Request.request | #13" />
+        <item itemvalue="HTTP Request.request | POST con datos válidos y createAt" />
+        <item itemvalue="HTTP Request.request | DELETE de cliente inexistente" />
+        <item itemvalue="HTTP Request.request | 3. Buscar cliente que NO existe (404 Not Found - JSON estructurado)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd0dd793-364c-4bc1-9634-fbdafaefc882" name="Changes" comment="" />
+      <created>1790175623265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790175623265</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
